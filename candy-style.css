@@ -2,20 +2,21 @@
   --color__red: #EA1C2C;
   --color__white: #FFFFFF;
   --color__purple: #DEC0DE;
-  --color__pink: #F5D9D5;
+  --color__pale-pink: #F5D9D5;
+  --color__pink: #F498B8;
   --font-size__nav: 1.5rem;
-  --font-weight__nav: 100;
+  --font-weight: 100;
 }
 
 body {
   font-family: "Nunito";
-  background-color: pink;
+  background-color: var(--color__pale-pink);
 }
 
 #main-nav {
   text-transform: uppercase;
   font-size: var(--font-size__nav);
-  font-weight: var(--font-weight__nav);
+  font-weight: var(--font-weight);
 }
 
 #main-nav .navbar-brand {
@@ -29,4 +30,44 @@ body {
 
 #main-nav .nav-link:hover {
   color: var(--color__red);
+}
+
+#logo-text h1 {
+  font-size: 3rem;
+  color: var(--color__white);
+  font-weight: var(--font-weight)
+}
+
+#logo-text span {
+  color: var(--color__red)
+}
+
+.marketing-copy {
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+.marketing-copy h2 {
+  color: var(--color__red);
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-weight: var(--font-weight);
+}
+
+.marketing-copy p {
+  color: var(--color__pink);
+  font-weight: var(--font-weight);
+  line-height: 2;
+  font-size: 1.125rem;
+}
+
+.navbar.scrolled {
+  background: var(--color__purple);
+  transition: background 800ms;
+}
+
+@media (max-width: 1200px) {
+  #logo-text h1 {
+    font-size: 2rem;
+  }
 }
