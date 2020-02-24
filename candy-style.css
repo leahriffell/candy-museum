@@ -1,0 +1,32 @@
+:root {
+  --color__red: #EA1C2C;
+  --color__white: #FFFFFF;
+  --color__purple: #DEC0DE;
+  --color__pink: #F5D9D5;
+  --font-size__nav: 1.5rem;
+  --font-weight__nav: 100;
+}
+
+body {
+  font-family: "Nunito";
+  background-color: pink;
+}
+
+#main-nav {
+  text-transform: uppercase;
+  font-size: var(--font-size__nav);
+  font-weight: var(--font-weight__nav);
+}
+
+#main-nav .navbar-brand {
+  color: var(--color__red);
+  font-size: var(--font-size__nav);
+}
+
+#main-nav .nav-link {
+  color: var(--color__white);
+}
+
+#main-nav .nav-link:hover {
+  color: var(--color__red);
+}
